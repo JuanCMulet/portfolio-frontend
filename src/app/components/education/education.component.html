@@ -1,0 +1,27 @@
+<div class="card mat-card">
+    <div class="card-body">
+      <div class="d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between">
+          <h5 class="card-title">Educación</h5>
+          <button *ngIf="loggedIn" (click)="toggleForm()" class="btn btn-default"><i class="bi bi-plus-circle" style="font-size: 1.5rem; color:rgb(61, 204, 92)"></i></button>
+        </div>
+        <br>
+        <app-education-items
+        *ngFor="let education of educations"
+        [education]="education"
+        [loggedIn]="loggedIn"
+        (onDeleteEducation)="deleteEducation(education)"
+        (onUpdateEducation)="updateEducation($event)"
+        >
+        </app-education-items>
+
+        <div class="container">
+          <app-add-education 
+          *ngIf="showAddEduc&&loggedIn"
+          (onAddEducation)="addEducation($event)">
+          </app-add-education>
+        </div>
+
+      </div>
+    </div>
+  </div>

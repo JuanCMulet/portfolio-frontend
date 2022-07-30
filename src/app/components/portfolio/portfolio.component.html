@@ -1,0 +1,32 @@
+<div>
+    <app-about
+    *ngIf="loggedIn"
+    [loggedIn]="loggedIn"
+    ></app-about>
+
+    <app-experience
+    *ngIf="loggedIn"
+    [loggedIn]="loggedIn"
+    ></app-experience>
+
+    <app-education
+    *ngIf="loggedIn"
+    [loggedIn]="loggedIn"
+    ></app-education>
+
+    <app-skills
+    *ngIf="loggedIn"
+    [loggedIn]="loggedIn"
+    ></app-skills>
+
+    <app-projects
+    *ngIf="loggedIn"
+    [loggedIn]="loggedIn"
+    ></app-projects>
+
+    <app-login
+    *ngIf="!loggedIn"
+    [loggedIn]="loggedIn"
+    ></app-login>
+
+</div>

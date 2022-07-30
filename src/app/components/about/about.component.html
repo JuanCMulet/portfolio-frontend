@@ -1,0 +1,25 @@
+<div class="card mat-card" id="first-card">
+
+    <app-background
+      [background]="about.backImage"
+      [loggedIn]="loggedIn"
+      (onUpdateBackground)="updateBackground($event)"
+    ></app-background>
+
+    <div class="card-body">
+      <div class="row">
+        <app-profile
+        [about]="about"
+        [loggedIn]="loggedIn"
+        (onUpdateProfile)="updateProfile($event)"
+        ></app-profile>
+
+        <app-description
+        [description]="about.description"
+        [loggedIn]="loggedIn"
+        (onUpdateDescription)="updateDescription($event)"
+        >
+        </app-description>
+      </div>
+    </div>
+</div>

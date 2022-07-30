@@ -1,0 +1,225 @@
+[debug] [2022-07-30T21:36:41.569Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:36:41.573Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-30T21:36:41.575Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:36:41.575Z] Platform:      win32
+[debug] [2022-07-30T21:36:41.575Z] Node Version:  v16.13.1
+[debug] [2022-07-30T21:36:41.577Z] Time:          Sat Jul 30 2022 18:36:41 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-07-30T21:36:41.578Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:36:41.751Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:36:41.753Z] > authorizing via signed-in user (juanignaciocmulet@gmail.com)
+[debug] [2022-07-30T21:36:41.753Z] [iam] checking project portfolio-argentina-prog-90b8e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-30T21:36:41.758Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions [none]
+[debug] [2022-07-30T21:36:41.759Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions x-goog-quota-user=projects/portfolio-argentina-prog-90b8e
+[debug] [2022-07-30T21:36:41.759Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:36:42.692Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions 200
+[debug] [2022-07-30T21:36:42.692Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:36:42.694Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:36:43.051Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:36:43.052Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[info] 
+[info] === Deploying to 'portfolio-argentina-prog-90b8e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-30T21:36:43.910Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:36:44.285Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:36:44.285Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[debug] [2022-07-30T21:36:44.289Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions [none]
+[debug] [2022-07-30T21:36:44.290Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-30T21:36:45.439Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions 500
+[debug] [2022-07-30T21:36:45.439Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-30T21:36:45.762Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-07-30T21:38:04.846Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:38:04.850Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-30T21:38:04.851Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:38:04.851Z] Platform:      win32
+[debug] [2022-07-30T21:38:04.851Z] Node Version:  v16.13.1
+[debug] [2022-07-30T21:38:04.855Z] Time:          Sat Jul 30 2022 18:38:04 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-07-30T21:38:04.856Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:38:05.080Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:38:05.081Z] > authorizing via signed-in user (juanignaciocmulet@gmail.com)
+[debug] [2022-07-30T21:38:05.081Z] [iam] checking project portfolio-argentina-prog-90b8e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-30T21:38:05.086Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions [none]
+[debug] [2022-07-30T21:38:05.088Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions x-goog-quota-user=projects/portfolio-argentina-prog-90b8e
+[debug] [2022-07-30T21:38:05.088Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:38:06.042Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions 200
+[debug] [2022-07-30T21:38:06.042Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:38:06.044Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:38:06.880Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:38:06.880Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[info] 
+[info] === Deploying to 'portfolio-argentina-prog-90b8e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-30T21:38:06.954Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:38:07.838Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:38:07.839Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[debug] [2022-07-30T21:38:07.843Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions [none]
+[debug] [2022-07-30T21:38:07.843Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-30T21:38:08.971Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions 500
+[debug] [2022-07-30T21:38:08.971Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-30T21:38:09.153Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-07-30T21:39:58.230Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:39:58.233Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-30T21:39:58.234Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:39:58.234Z] Platform:      win32
+[debug] [2022-07-30T21:39:58.235Z] Node Version:  v16.13.1
+[debug] [2022-07-30T21:39:58.237Z] Time:          Sat Jul 30 2022 18:39:58 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-07-30T21:39:58.237Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:39:58.372Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:39:58.373Z] > authorizing via signed-in user (juanignaciocmulet@gmail.com)
+[debug] [2022-07-30T21:39:58.374Z] [iam] checking project portfolio-argentina-prog-90b8e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-30T21:39:58.378Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions [none]
+[debug] [2022-07-30T21:39:58.379Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions x-goog-quota-user=projects/portfolio-argentina-prog-90b8e
+[debug] [2022-07-30T21:39:58.379Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:39:59.408Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions 200
+[debug] [2022-07-30T21:39:59.408Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:39:59.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:40:00.263Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:40:00.263Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[info] 
+[info] === Deploying to 'portfolio-argentina-prog-90b8e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-30T21:40:00.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:40:00.682Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:40:00.683Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[debug] [2022-07-30T21:40:00.686Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions [none]
+[debug] [2022-07-30T21:40:00.687Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"config":{"rewrites":[{"glob":"**","path":"\\index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-30T21:40:01.869Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions 500
+[debug] [2022-07-30T21:40:01.869Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-30T21:40:01.986Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-07-30T21:45:19.396Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:45:19.399Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-30T21:45:19.401Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:45:19.401Z] Platform:      win32
+[debug] [2022-07-30T21:45:19.402Z] Node Version:  v16.13.1
+[debug] [2022-07-30T21:45:19.406Z] Time:          Sat Jul 30 2022 18:45:19 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-07-30T21:45:19.406Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:45:19.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:45:19.593Z] > authorizing via signed-in user (juanignaciocmulet@gmail.com)
+[debug] [2022-07-30T21:45:19.594Z] [iam] checking project portfolio-argentina-prog-90b8e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-30T21:45:19.597Z] > refreshing access token with scopes: []
+[debug] [2022-07-30T21:45:19.600Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-30T21:45:19.600Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-30T21:45:19.941Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-30T21:45:19.942Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-30T21:45:20.116Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions [none]
+[debug] [2022-07-30T21:45:20.116Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions x-goog-quota-user=projects/portfolio-argentina-prog-90b8e
+[debug] [2022-07-30T21:45:20.116Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:45:20.997Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions 200
+[debug] [2022-07-30T21:45:20.997Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:45:21.000Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:45:21.868Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:45:21.868Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[info] 
+[info] === Deploying to 'portfolio-argentina-prog-90b8e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-30T21:45:21.875Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:45:22.681Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:45:22.682Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[debug] [2022-07-30T21:45:22.685Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions [none]
+[debug] [2022-07-30T21:45:22.686Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"config":{"rewrites":[{"glob":"**","path":"\\index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-30T21:45:23.880Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions 500
+[debug] [2022-07-30T21:45:23.880Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-30T21:45:24.005Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-07-30T21:46:03.100Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:46:03.103Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Juan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-30T21:46:03.104Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:46:03.104Z] Platform:      win32
+[debug] [2022-07-30T21:46:03.104Z] Node Version:  v16.13.1
+[debug] [2022-07-30T21:46:03.106Z] Time:          Sat Jul 30 2022 18:46:03 GMT-0300 (hora estándar de Argentina)
+[debug] [2022-07-30T21:46:03.107Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:46:03.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:46:03.377Z] > authorizing via signed-in user (juanignaciocmulet@gmail.com)
+[debug] [2022-07-30T21:46:03.377Z] [iam] checking project portfolio-argentina-prog-90b8e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-30T21:46:03.381Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions [none]
+[debug] [2022-07-30T21:46:03.382Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions x-goog-quota-user=projects/portfolio-argentina-prog-90b8e
+[debug] [2022-07-30T21:46:03.382Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:46:04.306Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions 200
+[debug] [2022-07-30T21:46:04.306Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-argentina-prog-90b8e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:46:04.309Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:46:05.124Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:46:05.124Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[info] 
+[info] === Deploying to 'portfolio-argentina-prog-90b8e'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-07-30T21:46:05.131Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e [none]
+[debug] [2022-07-30T21:46:05.971Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e 200
+[debug] [2022-07-30T21:46:05.971Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-argentina-prog-90b8e {"projectId":"portfolio-argentina-prog-90b8e","projectNumber":"9945200323","displayName":"portfolio-argentina-programa","name":"projects/portfolio-argentina-prog-90b8e","resources":{"hostingSite":"portfolio-argentina-prog-90b8e"},"state":"ACTIVE","etag":"1_b7b986ef-f598-47b1-b068-68a6180e718d"}
+[debug] [2022-07-30T21:46:05.975Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions [none]
+[debug] [2022-07-30T21:46:05.975Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-07-30T21:46:07.134Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions 500
+[debug] [2022-07-30T21:46:07.134Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/9945200323/sites/portfolio-argentina-prog-90b8e/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-07-30T21:46:07.252Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

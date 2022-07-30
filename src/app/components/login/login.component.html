@@ -1,0 +1,42 @@
+<form 
+  #it="ngForm"
+  class="d-flex flex-column container border border-dark rounded"
+  (ngSubmit)="onSubmit(it)"
+  >
+
+    <fieldset class="d-flex flex-column">
+
+      <div class="mb-3">
+        <label for="username" class="form-label">Email address</label>
+        <input 
+          required
+          class="form-control"
+          name="username"
+          type="email"
+          id="username"
+          ngModel
+          #username="ngModel"
+          placeholder="prueba@gmail.com"
+          >
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input 
+          required
+          class="form-control"
+          name="password"
+          type="password"
+          id="password"
+          ngModel
+          #password="ngModel"
+          placeholder="Password"
+          >
+      </div>
+      <button type="submit" class="btn btn-success mt-4 align-self-center">Log In</button>
+
+    </fieldset>
+
+    <a class="mt-4" href="#">Or create an account if you don't have one!</a>
+
+  </form>

@@ -1,0 +1,13 @@
+.mat-card {
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+  }
+  
+.mat-card#first-card {
+    padding: 0;
+  }
+  
+.card-body {
+    z-index: 1;
+  }

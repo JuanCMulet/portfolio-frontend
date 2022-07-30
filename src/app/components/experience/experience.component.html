@@ -1,0 +1,27 @@
+<div class="card mat-card">
+    <div class="card-body">
+      <div class="d-flex flex-column">
+        <div class="d-flex flex-row justify-content-between">
+          <h5 class="card-title">Experiencia</h5>
+          <button *ngIf="loggedIn" (click)="toggleForm()" class="btn btn-default"><i class="bi bi-plus-circle" style="font-size: 1.5rem; color:rgb(61, 204, 92)"></i></button>
+        </div>
+        <br>
+        <app-experience-items
+        *ngFor="let experience of experiences"
+        [experience]="experience"
+        [loggedIn]="loggedIn"
+        (onDeleteExperience)="deleteExperience(experience)"
+        (onUpdateExperience)="updateExperience($event)"
+        >
+        </app-experience-items>
+
+        <div class="container">
+          <app-add-experience 
+          *ngIf="showAddExp&&loggedIn"
+          (onAddExperience)="addExperience($event)">
+          </app-add-experience>
+        </div>
+
+      </div>
+    </div>
+  </div>
